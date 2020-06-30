@@ -13,12 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/siswa', function () {
     return view('welcome');
 });
 
-Route::get('/s',function () {
-    return view('index');
-});
-
-Route::get('/Siswa', 'SiswaController@index');
+Route::get('/s', 'SiswaController@index');
