@@ -1,0 +1,24 @@
+[33mcommit ab9ca90bd309549921daad7f6bb7f6fc73144e73[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Syahril20 <rodyulo20@gmail.com>
+Date:   Tue Jun 30 23:49:17 2020 +0700
+
+    bebas
+
+[1mdiff --git a/routes/web.php b/routes/web.php[m
+[1mindex c096c41..50dfeaf 100644[m
+[1m--- a/routes/web.php[m
+[1m+++ b/routes/web.php[m
+[36m@@ -14,7 +14,9 @@[m [muse Illuminate\Support\Facades\Route;[m
+ */[m
+ [m
+ Route::get('siswa', function () {[m
+[31m-    return view('index');[m
+[32m+[m[32m    return view('welcome');[m
+ });[m
+ [m
+[31m-Route::get('Siswa','SiswaController@index');[m
+\ No newline at end of file[m
+[32m+[m[32mRoute::get('/',function () {[m
+[32m+[m[32m    return view('index');[m
+[32m+[m[32m});[m
+\ No newline at end of file[m
