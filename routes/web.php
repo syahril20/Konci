@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('ytf', function () {
+Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/s',function () {
+    return view('index');
+});
+
+Route::get('/Siswa', 'SiswaController@index');
