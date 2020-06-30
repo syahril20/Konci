@@ -18,7 +18,17 @@
 			<th>NIM</th>
 			<th>Nama</th>
 		</tr>
-		
+		@foreach($Siswa as $p)
+		<tr>
+			<td>{{ $p->NIM }}</td>
+			<td>{{ $p->Nama_Siswa }}</td>
+			<td>
+				<a href="/Siswa/edit/{{ $p->NIM }}">Edit</a>
+				|
+				<a href="/Siswa/hapus/{{ $p->NIM }}">Hapus</a>
+			</td>
+		</tr>
+		@endforeach
 	</table>
 
 
